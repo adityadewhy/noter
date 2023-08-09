@@ -17,7 +17,13 @@ addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(noteItemsDB, inputValue)
 
-    inputFieldEl.value = ""
-    listEl.innerHTML += `<li>${inputValue}</li>`
-    console.log(inputValue)
+    clearInputFieldEl()
+    appendItem(inputValue)
 })
+
+function clearInputFieldEl(){
+    inputFieldEl.value = ""
+}
+function appendItem(item){
+    listEl.innerHTML += `<li>${item}</li>`
+}
