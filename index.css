@@ -1,20 +1,21 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
 }
+
 a {
     text-decoration: none;
 }
 
 body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
     display: flex;
     align-items: center;
 }
 
-#main {
+#container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -27,21 +28,22 @@ input {
     margin-top: 13px;
     color: #432000;
     background-color: #DCE1EB;
-    border: none;
+    border: 0;
     border-radius: 7px;
-    width: 13%;
-    height: 5%;
-}
-input::placeholder {
+    padding: 15px;
+    font-size: 20px;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 button {
     margin-top: 13px;
     color: #FDFDFD;
     background-color: #AC485A;
-    border: none;
+    border: 0;
     border-radius: 7px;
-    width: 13%;
-    height: 5%;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
