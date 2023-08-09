@@ -11,9 +11,13 @@ const noteItemsDB = ref(database, "noteItems")
 
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
+const listEl = document.getElementById("list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(noteItemsDB, inputValue)
+
+    inputFieldEl.value = ""
+    listEl.innerHTML += `<li>${inputValue}</li>`
     console.log(inputValue)
 })
