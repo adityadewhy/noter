@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push, onValue} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
     databaseURL : "https://noter-4f730-default-rtdb.asia-southeast1.firebasedatabase.app/"
@@ -19,6 +19,10 @@ addButtonEl.addEventListener("click", function() {
 
     clearInputFieldEl()
     appendItem(inputValue)
+})
+
+onValue(noteItemsDB, function(snapshot) {
+    let itemsArray = Object.values(snapshot.val())
 })
 
 function clearInputFieldEl(){
