@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
+//owner only access for now, public access XX
 const appSettings = {
     databaseURL : "https://noter-4f730-default-rtdb.asia-southeast1.firebasedatabase.app/"
 }
