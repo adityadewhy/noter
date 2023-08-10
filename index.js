@@ -23,6 +23,9 @@ addButtonEl.addEventListener("click", function() {
 
 onValue(noteItemsDB, function(snapshot) {
     let itemsArray = Object.values(snapshot.val())
+    for (let i = 0 ; i < itemsArray.length ; i++) {
+        appendItem(itemsArray[i])
+    }
 })
 
 function clearInputFieldEl(){
