@@ -1,2 +1,2 @@
 # noter
-first webapp, learnt from scrimba
+first webapp
