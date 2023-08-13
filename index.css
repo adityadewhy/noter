@@ -1,69 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
-    display: flex;
-    align-items: center;
+	font-family: "Rubik", sans-serif;
+	background-color: #eef0f4;
+	display: flex;
+	align-items: center;
 }
 
 #container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 input {
-    margin-top: 13px;
-    color: #432000;
-    background-color: #DCE1EB;
-    border: 0;
-    border-radius: 7px;
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
+	margin-top: 13px;
+	color: #432000;
+	background-color: #dce1eb;
+	border: 0;
+	border-radius: 7px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Rubik", sans-serif;
 }
 
 button {
-    margin-top: 13px;
-    color: #FDFDFD;
-    background-color: #AC485A;
-    border: 0;
-    border-radius: 7px;
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
+	margin-top: 13px;
+	color: #fdfdfd;
+	background-color: #ac485a;
+	border: 0;
+	border-radius: 7px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Rubik", sans-serif;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 13px 30px;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 13px 30px;
 }
 
 ul li {
-    background-color: #FFFDF8;
-    padding: 15px;
-    border-radius: 7px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-    flex-grow: 1;
-    font-size: 20px;
-    text-align: center;
+	background-color: #fffdf8;
+	padding: 15px;
+	border-radius: 7px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+	flex-grow: 1;
+	font-size: 20px;
+	text-align: center;
 }
