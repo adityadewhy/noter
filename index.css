@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    user-select: none;
+	user-select: none;
 }
 
 a {
@@ -11,7 +11,19 @@ a {
 
 body {
 	font-family: "Rubik", sans-serif;
-	background-color: #eef0f4;
+
+	background: #dbe6f6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#c5796d,
+		#dbe6f6
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#c5796d,
+		#dbe6f6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	display: flex;
 	align-items: center;
 }
@@ -23,6 +35,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+img {
+	width: 150px;
+	border-radius: 10px;
+	zoom: 150%;
 }
 
 input {
@@ -49,6 +67,10 @@ button {
 	font-family: "Rubik", sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -67,4 +89,8 @@ ul li {
 	flex-grow: 1;
 	font-size: 20px;
 	text-align: center;
+}
+
+ul li:hover {
+    cursor: pointer;
 }
